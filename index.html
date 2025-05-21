@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Viaje de Autodescubrimiento 👷‍♀️</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+        }
+        section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: .5rem;
+            margin-bottom: 1.5rem;
+        }
+        nav.navbar {
+            background: linear-gradient(45deg, #0d6efd, #6610f2);
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white !important;
+        }
+        footer {
+            background-color: #212529;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+    window.onscroll = function () {
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById("scrollProgressBar").style.width = scrolled + "%";
+    };
+</script>
+
+
+    <!-- Barra de progreso de scroll -->
+<div id="scrollProgressBar" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    z-index: 9999;
+    transition: width 0.2s ease;
+"></div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Viaje de Autodescubrimiento 👷‍♀️</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#presentacion">Presentación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#descripcion">Asignatura</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#actividades">Actividades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aprendizajes">Aprendizajes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competencias">Competencias Todas Asignaturas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competencias_humanidades_dos">Competencia Electiva Humanidades II</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencias">Experiencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inquietudes">Inquietudes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sugerencias">Sugerencias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section id="presentacion">
+            <h2><i class="bi bi-person-circle"></i> Hoja de Presentación</h2>
+            <p><strong>Título del portafolio:</strong> Mi Viaje de Autodescubrimiento</p>
+            <p><strong>Nombre completo:</strong> Zharik Martinez Polo</p>
+            <p><strong>Semestre y año:</strong> Tercer semestre, 2025</p>
+            <p><strong>Fecha de entrega:</strong> 20 de mayo de 2025</p>
+            <p><strong>Asignaturas:</strong></p>
+            <ul>
+                <li>Cálculo Vectorial</li>
+                <li>Física de Campo</li>
+                <li>Electiva de Humanidades II</li>
+                <li>Fundamentos de Sistemas Productivos y Logísticos</li>
+                <li>Análisis Inferencial de Datos</li>
+                <li>BIVE III</li>
+            </ul>
+            <img src="Imagen_Zharik_Ing_Industrial.jpeg" alt="Foto representativa" class="img-fluid rounded">
+        </section>
+
+        <!-- Aquí puedes agregar todas las secciones siguientes como en tu HTML original -->
+
+         <!-- Sección 2: Sobre Mí -->
+<section id="sobre-mi" class="container py-5">
+    <h2>Sobre Mí</h2>
+    <p>Mi nombre es Zharik Martinez Polo, soy estudiante de Ingeniería Industrial en la Universidad de la Costa.</p>
+    <p><strong>Valores personales:</strong> La honestidad, la empatía y la disciplina</p>
+    <p><strong>Aspiraciones actuales:</strong> En este momento, mis aspiraciones se centran en fortalecer mis competencias como ingeniera.</p>
+    <img src="avatar.jpeg" alt="Avatar" class="img-fluid">
+    <br><br>
+    <p><em>Mi mantra favorita: "El éxito no se logra solo con cualidades especiales. Es sobre todo un trabajo de constancia, de método y de organización"</em></p>
+
+    <!-- Botón que abre el modal -->
+    <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#videoModal">
+        Ver mi video de presentación
+    </button>
+</section>
+
+
+    <!-- Sección 3: Descripción de la Asignatura y Contenido -->
+    <section id="descripcion" class="container py-5">
+        <h2>Descripción de la Asignatura y Contenido</h2>
+        <p><strong>Descripción:</strong> En este semestre, se abordaron temas fundamentales para mi formación en ingeniería, donde las asignaturas no solo profundizan en las bases científicas y matemáticas, sino que también fortalecen habilidades prácticas y de análisis crítico.</p>
+        <p><strong>Unidades estudiadas:</strong></p>
+    <ul>
+        <li><strong>Cálculo Vectorial: </strong>Estudio de vectores, campos vectoriales y sus aplicaciones en la física. Esta asignatura es esencial para comprender los fundamentos de la mecánica y el electromagnetismo.</li>
+        <li><strong>Física de Campo: </strong>Se enfoca en los campos eléctricos y magnéticos, proporcionando una comprensión profunda de cómo interactúan las fuerzas fundamentales a nivel micro y macroscópico.</li>
+        <li><strong> Fundamentos de Sistemas Productivos y Logísticos: </strong>Esta asignatura me permitió explorar la optimización de procesos y la cadena de suministro, habilidades clave para mi futuro profesional en ingeniería industrial.</li>
+        <li><strong>Análisis Inferencial de Datos: </strong>Aprendí a utilizar métodos estadísticos avanzados para interpretar datos, fundamental para la toma de decisiones basadas en información cuantitativa.</li>
+        <li><strong>BIVE III: </strong>Un enfoque en las habilidades de comunicación y trabajo colaborativo, preparándome para proyectos interdisciplinarios en mi carrera profesional.</li>
+    </ul>        
+<p><strong>Objetivos principales:</strong> Los principales objetivos de estas asignaturas fueron el dominio de las herramientas matemáticas y físicas para modelar fenómenos reales, y el desarrollo de habilidades socioemocionales como la comunicación efectiva y el trabajo en equipo.
+</p>
+        <p><strong>Reflexión personal:</strong> Este curso me invitó a explorar herramientas para conectar con mi propósito personal, fortalecer mis metas y reflexionar sobre el camino hacia una vida más significativa. A través de la escritura y el análisis, me he acercado más a mi desarrollo personal y profesional, aprendiendo a gestionar conflictos, expresar emociones y proyectar mis aspiraciones a futuro.</p>
+        <p><strong>Descripción de la asignatura:</strong> El curso Existential Engineering me llevó a explorar cómo diseñar mi propia vida con sentido, en medio de un mundo tan cambiante y complejo. Más allá de la teoría, fue un espacio para conectar con lo que realmente me mueve, descubrir mi propósito y aprender a expresar todo eso con claridad a través de la escritura. Aquí entendí que la comunicación no es solo transmitir palabras, sino construir puentes con los demás y conmigo mismo para crecer y avanzar en mi proyecto de vida.</p>
+        <p><strong>Unidades estudiadas</strong> Escribir puentes con la comunicación como camino
+En esta primera etapa aprendí a usar la escritura para fortalecer mis relaciones y expresar mis ideas y emociones de manera honesta y clara. Me di cuenta de lo importante que es comunicar desde el respeto y la empatía para construir lazos que realmente tengan significado.</p>
+        <p>Voces en diálogo creando lazos con significado
+Aquí profundicé en cómo afrontar situaciones difíciles, cómo respetar las diferencias y cómo trabajar en equipo. Fue un aprendizaje sobre la paciencia, la asertividad y el valor de entender al otro para poder seguir creciendo juntos.</p>
+         <p>Comunicando el sentido como estrategia para la vida
+Esta unidad me invitó a reflexionar sobre mis decisiones y valores, y cómo todo eso influye en mi bienestar y en las relaciones que construyo. Aprendí a comunicar con intención, para que lo que escribo y digo realmente apoye mis sueños y proyectos.</p>
+         <p><strong>Objetivos principales:</strong> El curso me ayudó a desarrollar la capacidad de comunicarme mejor, no solo para ser entendido, sino para conectar desde el corazón con quienes me rodean. Me enseñó a manejar emociones, a ser más paciente conmigo y con los demás, y a enfrentar los retos con una mirada positiva y constructiva. Sobre todo, me impulsó a descubrir qué quiero y cómo puedo ir construyendo una vida que tenga sentido para mí.</p>
+         <p><strong>Reflexión personal sobre la relevancia del curso
+Este curso fue mucho más que una asignatura:</strong> Fue una invitación a mirar hacia dentro, a cuestionarme y a ser honesto conmigo mismo sobre lo que quiero en la vida. La escritura se volvió mi aliada, un espacio seguro donde pude explorar mis pensamientos, ordenar mis ideas y clarificar mis sentimientos.</p>
+         <p>También me ayudó a entender que el camino hacia una vida con propósito no es lineal ni fácil, pero sí posible si aprendo a comunicarme bien, a ser empático y a respetar mis propios tiempos y los de los demás. Además, desarrollar estas competencias socioemocionales me hace sentir más preparado para enfrentar los desafíos no solo académicos o profesionales, sino también personales y sociales.</p>
+         <p>Al final, Existential Engineering me enseñó que construir un proyecto de vida auténtico es un acto de valentía y amor propio, y que la comunicación y la reflexión constante son herramientas poderosas para lograrlo.</p>
+    </section>
+
+    <!-- Sección 4: Actividades Realizadas -->
+    <section id="actividades" class="container py-5"> 
+        <h2>Actividades Realizadas</h2>
+        <p><strong>Nombre de la actividad:</strong> Proceso de armado de Motos</p>
+        <p><strong>Fecha de realización:</strong> 08-04-2025</p>
+        <img src="Act_1.jpeg" alt="Actividad 1" class="img-fluid">
+        <br>
+        <br>
+        <p><strong>Descripción:</strong> En la imagen se observa un proceso de ensamblaje de motos de juguete. El objetivo era identificar las mejores prácticas de ensamblaje, tomando tiempos para cada tarea, analizando la estandarización de los movimientos y las posturas adecuadas. Se estaba evaluando el diseño de los puestos de trabajo para garantizar que fueran ergonómicos y eficientes, buscando optimizar los tiempos de ensamblaje y mejorar la productividad mediante la estandarización del trabajo.</p>
+        <!-- Puedes agregar más actividades aquí -->
+         <br>
+         <p><strong>Nombre de la actividad:</strong> Diseño y construcción de un capacitor</p>
+        <p><strong>Fecha de realización:</strong> 01-04-2025</p>
+        <img src="Act_2.jpeg" alt="Actividad 1" class="img-fluid">
+        <br>
+        <br>
+        <p><strong>Descripción:</strong> En la imagen se muestra un experimento en el que se estaba construyendo un capacitor. Durante la asignatura de Física de Campos, diseñamos y analizamos el funcionamiento de este dispositivo. El capacitor se formó utilizando materiales como aluminio y poliestireno, y se conectaron cables para medir su capacidad de almacenamiento de carga. Este proyecto nos permitió comprender cómo funcionan los capacitores en términos de almacenamiento de energía eléctrica y el impacto de variables como la distancia entre las placas y el material dieléctrico utilizado.</p>
+        <br>
+         <p><strong>Nombre de la actividad:</strong> Construcción de una cartelera sobre inclusión y palabras claves</p>
+        <p><strong>Fecha de realización:</strong> 31-03-2025</p>
+        <img src="Act_3.jpg" alt="Actividad 1" class="img-fluid">
+        <br>
+        <br>
+        <p><strong>Descripción:</strong> Trabajamos en grupos de 4 personas y realizamos esta cartelera con el objetivo de aprender y reflexionar sobre el tema de la inclusión. Durante la actividad, comprendimos que la inclusión va más allá de aceptar a los demás; se trata de crear espacios seguros donde todas las personas puedan ser ellas mismas, sin temor a ser juzgadas. También exploramos conceptos clave como diversidad, respeto, derechos, aceptación, accesibilidad y equidad.</p>
+    </section>
+
+    <!-- Sección 5: Lo que Aprendí -->
+    <section id="aprendizajes" class="container py-5">
+        <h2>Lo que Aprendí</h2>
+        <p><strong>Conocimientos teóricos:</strong>Conocimientos teóricos:</p>
+    <ul>
+        <li><strong>Cálculo Vectorial: </strong>Aprendí a calcular divergencia, rotacional y aplicarlos en situaciones prácticas de electromagnetismo y mecánica.</li>
+        <li><strong>Física de Campo: </strong>Profundicé en el concepto de campo eléctrico y magnético, y cómo se modelan con ecuaciones matemáticas.</li>
+        <li><strong>Análisis Inferencial de Datos: </strong>Dominé el uso de técnicas estadísticas como pruebas de hipótesis y análisis de regresión para interpretar datos en el contexto de la toma de decisiones</li>
+    </ul>
+        <p><strong>Habilidades prácticas:</strong> Apliqué métodos matemáticos y físicos en situaciones prácticas, como la resolución de problemas con el uso de integrales y derivadas parciales. En Fundamentos de Sistemas Productivos y Logísticos, utilicé software para modelar y optimizar procesos.</p>
+        <p><strong>Competencias socioemocionales:</strong> Las asignaturas como BIVE III me ayudaron a mejorar mis habilidades de comunicación escrita y oral, así como mi capacidad para trabajar en equipo, resolver conflictos y manejar situaciones bajo presión.</p>
+    </section>
+
+    <!-- Sección 6: Competencias -->
+    <section id="competencias" class="container py-5">
+        <h2>Competencias que adquirí en todas las asignaturas</h2>
+        <ul>
+            <li><strong>Comunicación escrita:</strong> Fortalecí mi capacidad para expresar ideas complejas de manera clara y coherente, especialmente en los informes de análisis de datos y en los proyectos de física.</li>
+            <li><strong>Autoconocimiento:</strong> Al reflexionar sobre los contenidos de la Electiva de Humanidades II, pude identificar mis valores y cómo estos influirán en mi práctica profesional.</li>
+            <li><strong>Gestión emocional:</strong> Desarrollé estrategias para gestionar mis emociones en situaciones de estrés, como en los exámenes o cuando trabajo en proyectos de grupo.</li>
+            <li><strong>Creatividad:</strong> Participé en actividades de resolución de problemas que requerían pensar de manera innovadora, como el diseño de soluciones logísticas en la asignatura de Fundamentos de Sistemas Productivos.</li>
+            <li><strong>Pensamiento crítico:</strong> Desarrollé habilidades de análisis crítico en Análisis Inferencial de Datos, evaluando la validez de los resultados obtenidos a partir de los datos y utilizando las herramientas estadísticas de manera efectiva.</li>
+            <li><strong>Trabajo colaborativo:</strong> Me involucré activamente en proyectos de grupo, donde aprendí a gestionar el trabajo en equipo y a aportar de manera equitativa a las tareas asignadas.</li>
+        </ul>
+    </section>
+
+
+    <section id="competencias_humanidades_dos" class="container py-5">
+        <h2>Competencias que adquirí en electiva humanidades II</h2>
+        <ul>
+            <li><strong>Comunicarme mejor a través de la escritura:</strong> Aprendí a poner en palabras lo que siento y pienso de manera clara y sincera. La escritura dejó de ser solo una tarea y se convirtió en una herramienta para conectarme conmigo mismo y con los demás, ayudándome a fortalecer mis relaciones y expresar mejor mis ideas y emociones.</li>
+            <li><strong>Entender y manejar mis emociones:</strong> El curso me enseñó a reconocer lo que siento y a respetar también lo que sienten otros. Desarrollé la empatía, que me ayuda a ponerme en los zapatos del otro, y la asertividad, para comunicarme sin lastimar ni dejar que me lastimen. También aprendí a ser paciente conmigo mismo cuando las cosas no salen como quiero.</li>
+            <li><strong>Conocerme más y reflexionar sobre mi vida:</strong> Este espacio me invitó a mirar hacia dentro, a pensar en lo que realmente quiero y en cómo quiero vivir. A través de ejercicios y la escritura, pude clarificar mis metas y empezar a construir un camino que tenga sentido para mí, tomando decisiones con más conciencia y compromiso.</li>
+            <li><strong>Trabajar en equipo respetando las diferencias:</strong> Aprendí a escuchar de verdad, a valorar las distintas formas de pensar y a colaborar con otros con respeto y paciencia. Entendí que el trabajo en equipo es mucho más que repartir tareas: es construir juntos desde la diversidad.</li>
+            <li><strong>Desarrollar un sentido ético y responsable:</strong> Comprendí que vivir con sentido también implica actuar con responsabilidad, cuidar mis relaciones y pensar en el impacto de mis decisiones en mí y en quienes me rodean.</li>
+            <li><strong>Planificar mi vida con propósito:</strong> Finalmente, adquirí herramientas para diseñar pasos concretos hacia mis sueños, con un plan que me ayude a avanzar poco a poco y a mantenerme enfocado en lo que realmente importa para mí.</li>
+        </ul>
+    </section>
+
+    <!-- Sección 7: Experiencias Favoritas -->
+    <section id="experiencias" class="container py-5">
+        <h2>Tus experiencias favoritas</h2>
+        <p><strong>Resolución de problemas en Cálculo Vectorial:</strong> Esta actividad me permitió aplicar conceptos abstractos de forma práctica, algo que disfruté mucho. La satisfacción de encontrar soluciones a problemas complejos fue una experiencia valiosa.</p>
+        <img src="Exp_1.jpeg" alt="Actividad 1" class="img-fluid">
+        <br>
+        <br>
+        <p><strong>Balanceo de Lineas en Fundamentos de Sistemas Productivos:</strong> Trabajar en un proyecto real de optimización de procesos fue muy enriquecedor. Me permitió aplicar lo aprendido en clase de una manera tangible y me motivó a investigar más sobre la eficiencia industrial.</p>
+        <img src="Exp_2.jpeg" alt="Actividad 1" class="img-fluid">
+        <br>
+        <br>
+        <p><strong>Creación Collage en Electiva de Humanidades II: </strong> Trabajar en grupos de 4 integrantes fue una experiencia muy especial para mí porque me permitió entender lo importante que es confiar en los demás y asumir responsabilidades juntos. En un grupo pequeño, cada persona tiene un papel fundamental, y aprendí que cuando todos aportamos desde nuestras diferencias, el trabajo se enriquece y se vuelve más valioso.
+
+En mis escritos, me di cuenta de cómo crecí al expresar cosas como “el equipo es más fuerte cuando escuchamos de verdad” o “aprender a respetar las ideas de otros me hizo ser mejor”. Eso mostró cómo fui mejorando en comunicarme y en entender a los demás desde el corazón.
+
+Además, estas experiencias me hicieron ver la escritura de otra manera: ya no solo como algo para poner palabras, sino como una forma de descubrirme a mí mismo y de conectar con los demás de una manera más profunda y auténtica.</p>
+        <img src="Exp_3.jpeg" alt="Actividad 1" class="img-fluid">
+        <br>
+        <br>
+    </section>
+
+    <!-- Sección 8: Inquietudes -->
+    <section id="inquietudes" class="container py-5">
+        <h2>Tus Inquietudes</h2>
+        <p><strong>Desafíos con el contenido de física:</strong> Algunas de las leyes de campo y electromagnetismo fueron complejas de entender, especialmente al aplicar integrales en varios contextos.</p>
+        <p><strong>Gestión del tiempo:</strong> En algunos momentos, me fue difícil balancear el trabajo en equipo con la carga de estudios individuales. Esto me llevó a reflexionar sobre cómo mejorar mi gestión del tiempo.</p>
+    </section>
+
+    <!-- Sección 9: Sugerencias -->
+    <section id="sugerencias" class="container py-5">
+        <h2>Tus Sugerencias</h2>
+        <p><strong>Aspectos positivos a mantener:</strong> La combinación de asignaturas teóricas y prácticas es muy efectiva. Las actividades de Análisis Inferencial de Datos me permitieron aplicar conocimientos estadísticos de manera real y me ofrecieron una visión más clara sobre cómo interpretar datos en situaciones reales.</p>
+        <p><strong>Recursos adicionales que recomiendo:</strong> Algunas de las leyes de campo y electromagnetismo fueron complejas de entender, especialmente al aplicar integrales en varios contextos.</p>
+    </section>
+
+    </main>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Portafolio Zharik Martinez | Hecho con <i class="bi bi-heart-fill text-danger"></i></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    const videoModal = document.getElementById('videoModal');
+    videoModal.addEventListener('hidden.bs.modal', () => {
+        const iframe = videoModal.querySelector('iframe');
+        const src = iframe.src;
+        iframe.src = '';
+        iframe.src = src;
+    });
+</script>
+
+
+    <!-- Modal con video de YouTube -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">Video de Presentación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/1uc55A-9s3k" title="Video de presentación Zharik Martinez" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
